@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+
+# Save Data
+*.xml
+
+# VS Code
+.vscode
