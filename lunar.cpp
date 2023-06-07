@@ -27,7 +27,7 @@ int main() {
     regex coins ("<coins>[0-9]+<\\/coins>");
     string replaced = "";
     if (regex_search(saveInformation, coins)) {
-        replaced = regex_replace(saveInformation, coins, "<coins>99999999</coins>");
+        replaced = regex_replace(saveInformation, coins, "<coins>2147483640</coins>");
         cout << "Replacement successful." << endl;
     } else {
         cout << "<coins> not detected. Are you sure this is the correct save XML?" << endl;
