@@ -19,7 +19,7 @@ def replace_lunars(save_path: str):
         regex = r"<coins>([0-9]+)</coins>"
         coins = re.sub(regex, "<coins>2147483640</coins>", xml)
 
-        print(coins)
+        fh.write(coins)
 
 if __name__ == "__main__":
     main()
